@@ -1,0 +1,23 @@
+# Apache hosting: compression and caching. nginx hosting ignores this file.
+AddDefaultCharset utf-8
+
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType font/woff2 .woff2
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript text/plain application/xml application/manifest+json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType text/javascript "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
