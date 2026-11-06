@@ -1331,28 +1331,31 @@ html.viewer-open { overflow: hidden; }
 .about__text > p:first-of-type { font-size: var(--fs-lead); }
 .about__amenities { margin-top: var(--s-7); max-width: 34rem; }
 .about__amenities h3 { margin-bottom: var(--s-3); }
-.about__plate { position: sticky; top: calc(var(--header-h) + var(--s-6)); justify-self: center; width: min(100%, 24rem); }
+.about__aside { display: grid; justify-items: center; gap: var(--s-7); }
+.about__plate { width: min(100%, 24rem); }
+.about__plate.plate--blue { transform: rotate(-1.5deg); }
 
-/* Masters: three small cameos, the salon's people rather than a single face */
-.masters { margin-top: var(--s-7); }
-.masters > p { margin-top: var(--s-2); color: var(--ink-2); }
+/* Masters: a full-width row of large cameos; each portrait is cropped so the face sits dead centre */
+.masters { margin-top: var(--s-9); }
+.masters .title-orn p { max-width: 44ch; color: var(--ink-2); }
 .masters__list {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--s-5);
-  margin-top: var(--s-5);
-  max-width: 36rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  justify-items: center;
+  gap: var(--s-7) var(--s-6);
+  margin-top: var(--s-7);
 }
-.masters__list .cameo { gap: var(--s-3); }
-.masters__list .cameo__frame { width: 100%; padding: var(--s-2); }
-.masters__list figcaption { display: grid; gap: var(--s-1); font-style: normal; font-size: var(--fs-small); }
-.masters__name { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.2; }
+.masters__list > li { width: 100%; display: grid; justify-items: center; }
+.masters__list .cameo { gap: var(--s-4); width: min(100%, 18rem); }
+.masters__list .cameo__frame { width: 100%; }
+.masters__list figcaption { display: grid; gap: var(--s-1); font-style: normal; }
+.masters__name { font-family: var(--font-display); font-size: var(--fs-h3); line-height: 1.2; }
 .masters__role { font-style: italic; color: var(--ink-2); }
 @media (max-width: 47.9375rem) {
-  .about__plate { position: static; }
-  .masters__list { gap: var(--s-3); }
+  .about__plate.plate--blue { transform: none; }
+  .masters { margin-top: var(--s-8); }
 }
 
 @media (max-width: 60rem) {

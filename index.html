@@ -695,6 +695,7 @@
     </section>
     <section class="section about" id="o-salone" aria-labelledby="about-title">
       <div class="container about__grid">
+        <div class="about__aside">
         <figure class="plate about__plate">
           <div class="plate__mark">
             <span class="plate__corner plate__corner--tl"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
@@ -706,6 +707,18 @@
             <figcaption>Людмила на обучении по стрижкам: диплом мастера точных стрижек, 2024.</figcaption>
           </div>
         </figure>
+        <figure class="plate plate--blue about__plate">
+          <div class="plate__mark">
+            <span class="plate__corner plate__corner--tl"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
+            <span class="plate__corner plate__corner--tr"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
+            <span class="plate__corner plate__corner--bl"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
+            <span class="plate__corner plate__corner--br"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
+            <div class="plate__head"><span>Картинка № 28</span><svg class="orn orn--fleuron" aria-hidden="true"><use href="#orn-fleuron"/></svg><span>За работой</span></div>
+            <div class="plate__img"><img src="img/evgeniya-za-rabotoy.jpg" srcset="img/evgeniya-za-rabotoy-640.jpg 374w, img/evgeniya-za-rabotoy.jpg 748w" sizes="(max-width: 47.9375rem) 80vw, 22rem" width="748" height="1280" alt="Евгения в перчатках оформляет брови клиентке" loading="lazy"></div>
+            <figcaption>Евгения, мастер&#8209;бровист, за работой.</figcaption>
+          </div>
+        </figure>
+        </div>
 
         <div class="about__text">
           <div class="title-orn">
@@ -715,30 +728,6 @@
           <p>«Пушкинъ» — небольшая парикмахерская на втором этаже дома 57 по Ленинградской. Здесь стригут женщин, мужчин и детей и выполняют окрашивание любой сложности.</p>
           <p>Салон работает больше десяти лет. За эти годы у нас сложились доверительные отношения с клиентами: нам доверяют и возвращаются снова и снова. Каждый мастер ежегодно повышает квалификацию, чтобы держать высокий стандарт и работать в самых актуальных техниках. Мы рады, что стали местом, где ценят стабильность, профессионализм и индивидуальный подход.</p>
 
-          <div class="masters">
-            <h3>Мастера</h3>
-            <p>У нас работают два мастера-парикмахера и мастер по оформлению бровей.</p>
-            <ul class="masters__list" role="list">
-              <li>
-                <figure class="cameo">
-                  <div class="cameo__frame"><div class="cameo__img"><img src="img/lyudmila-diplom.jpg" width="960" height="1280" alt="Людмила, парикмахер" loading="lazy" style="--focus: 55% 14%; --zoom: 4.2"></div></div>
-                  <figcaption><span class="masters__name">Людмила</span><span class="masters__role">парикмахер</span></figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="cameo">
-                  <div class="cameo__frame"><div class="cameo__img"><img src="img/raboty/kare-s-chelkoi-640.jpg" width="480" height="640" alt="Юля, парикмахер" loading="lazy" style="--focus: 50% 24%; --zoom: 1.7"></div></div>
-                  <figcaption><span class="masters__name">Юля</span><span class="masters__role">парикмахер</span></figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="cameo">
-                  <div class="cameo__frame"><div class="cameo__img"><img src="img/evgeniya-640.jpg" width="306" height="640" alt="Евгения, мастер по бровям" loading="lazy" style="--focus: 55% 37%; --zoom: 2.3"></div></div>
-                  <figcaption><span class="masters__name">Евгения</span><span class="masters__role">мастер по бровям</span></figcaption>
-                </figure>
-              </li>
-            </ul>
-          </div>
           <a class="btn btn--book" href="https://dikidi.ru/1665458" data-booking style="margin-top: var(--s-6)">
             <svg class="scissors" viewBox="0 0 48 24" aria-hidden="true">
               <g class="blade blade-a"><circle cx="7" cy="6.5" r="4.8"/><path d="M11.4 8.2C15 9.5 19 10.6 24 12C31 13.6 38 15.4 46 17.5C39 14.4 32 12.4 24 10.8"/></g>
@@ -760,6 +749,33 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="container masters">
+        <div class="title-orn title-orn--center">
+          <h3>Мастера</h3>
+          <p>У нас работают два мастера-парикмахера и мастер по оформлению бровей.</p>
+        </div>
+        <ul class="masters__list" role="list">
+          <li>
+            <figure class="cameo">
+              <div class="cameo__frame"><div class="cameo__img"><img src="img/masters/lyudmila.jpg" width="600" height="750" alt="Людмила, парикмахер" loading="lazy"></div></div>
+              <figcaption><span class="masters__name">Людмила</span><span class="masters__role">парикмахер</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="cameo">
+              <div class="cameo__frame"><div class="cameo__img"><img src="img/masters/yulia.jpg" width="600" height="750" alt="Юля, парикмахер" loading="lazy"></div></div>
+              <figcaption><span class="masters__name">Юля</span><span class="masters__role">парикмахер</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="cameo">
+              <div class="cameo__frame"><div class="cameo__img"><img src="img/masters/evgeniya.jpg" width="600" height="750" alt="Евгения, мастер по бровям" loading="lazy"></div></div>
+              <figcaption><span class="masters__name">Евгения</span><span class="masters__role">мастер по бровям</span></figcaption>
+            </figure>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="section reviews" id="otzyvy" aria-labelledby="reviews-title">
@@ -875,7 +891,7 @@
             <span class="plate__corner plate__corner--tr"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
             <span class="plate__corner plate__corner--bl"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
             <span class="plate__corner plate__corner--br"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
-            <div class="plate__head"><span>Картинка № 28</span><svg class="orn orn--fleuron" aria-hidden="true"><use href="#orn-fleuron"/></svg><span>Рабочее место</span></div>
+            <div class="plate__head"><span>Картинка № 29</span><svg class="orn orn--fleuron" aria-hidden="true"><use href="#orn-fleuron"/></svg><span>Рабочее место</span></div>
             <div class="plate__img"><img src="img/salon-kreslo.jpg" srcset="img/salon-kreslo-640.jpg 480w, img/salon-kreslo.jpg 960w" sizes="(max-width: 60rem) 16rem, 22rem" width="960" height="1280" alt="Кресло мастера у большого зеркала с подсветкой" loading="lazy"></div>
             <figcaption>Кресло мастера у зеркала с подсветкой.</figcaption>
           </div>
@@ -938,7 +954,7 @@
             <span class="plate__corner plate__corner--tr"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
             <span class="plate__corner plate__corner--bl"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
             <span class="plate__corner plate__corner--br"><svg class="orn draw" aria-hidden="true"><use href="#orn-corner"/></svg></span>
-            <div class="plate__head"><span>Картинка № 29</span><svg class="orn orn--fleuron" aria-hidden="true"><use href="#orn-fleuron"/></svg><span>План</span></div>
+            <div class="plate__head"><span>Картинка № 30</span><svg class="orn orn--fleuron" aria-hidden="true"><use href="#orn-fleuron"/></svg><span>План</span></div>
             <div class="findus__frame">
               <svg class="plan" viewBox="0 0 400 300" role="img" aria-labelledby="plan-title">
                 <title id="plan-title">Схема: дом 57 стоит вдоль Ленинградской улицы, вход со двора, у пункта «Озон», на втором этаже; рядом остановка «Церковная улица»</title>
