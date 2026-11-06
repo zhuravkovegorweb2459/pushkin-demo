@@ -894,7 +894,8 @@ a:hover { text-decoration-color: currentColor; }
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   gap: var(--s-5) var(--s-8);
-  align-items: end;
+  /* Top-aligned: a long lead must not rise above the section title */
+  align-items: start;
   margin-bottom: var(--s-7);
 }
 .split-head > p { max-width: 40ch; font-size: var(--fs-lead); color: var(--ink-2); }
