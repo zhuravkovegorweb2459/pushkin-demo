@@ -899,6 +899,9 @@ a:hover { text-decoration-color: currentColor; }
   margin-bottom: var(--s-7);
 }
 .split-head > p { max-width: 40ch; font-size: var(--fs-lead); color: var(--ink-2); }
+/* Works: the long lead sits under the title on every width (client's edit) */
+.gallery .split-head { grid-template-columns: minmax(0, 1fr); }
+.gallery .split-head > p { max-width: 60ch; }
 @media (max-width: 60rem) {
   .split-head { margin-bottom: var(--s-6); }
 }
