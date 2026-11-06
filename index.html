@@ -35,7 +35,7 @@
     "image": "https://pushkin-salon.example/img/og-image.jpg",
     "description": "Уютный салон во дворе на Ленинградской, 57 в Пушкине: стрижки для женщин, мужчин и детей, окрашивание любой сложности, уход за волосами, брови.",
     "telephone": "+7 921 906-83-41",
-    "priceRange": "от 1 200 ₽",
+    "priceRange": "от 300 ₽",
     "currenciesAccepted": "RUB",
     "paymentAccepted": "Наличные, перевод",
     "address": {
@@ -66,9 +66,12 @@
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Укладка" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 3500, "priceCurrency": "RUB" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Окрашивание любой сложности" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Глубокое восстановление волос" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 3500, "priceCurrency": "RUB" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Оформление бровей" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 1500, "priceCurrency": "RUB" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Окрашивание бровей" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 1500, "priceCurrency": "RUB" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ламинирование бровей" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 2000, "priceCurrency": "RUB" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Оформление бровей с окрашиванием" }, "price": 1300, "priceCurrency": "RUB" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Оформление бровей без окрашивания" }, "price": 1000, "priceCurrency": "RUB" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ламинирование бровей" }, "price": 1800, "priceCurrency": "RUB" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Уход за бровями" }, "price": 300, "priceCurrency": "RUB" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Окрашивание ресниц" }, "price": 500, "priceCurrency": "RUB" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Коррекция воском дополнительной зоны" }, "price": 300, "priceCurrency": "RUB" },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Аренда парикмахерского кресла" }, "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 300, "priceCurrency": "RUB", "unitText": "час" } }
       ]
     }
@@ -347,11 +350,23 @@
               </section>
 
               <section class="services__group" aria-labelledby="services-brows">
-                <h3 id="services-brows">Брови</h3>
+                <h3 id="services-brows">Брови и ресницы</h3>
                 <ul class="price-list" role="list">
-                  <li class="price-row"><span class="price-row__name">Оформление бровей</span><span class="price-row__price">от 1 500 ₽</span></li>
-                  <li class="price-row"><span class="price-row__name">Окрашивание бровей</span><span class="price-row__price">от 1 500 ₽</span></li>
-                  <li class="price-row"><span class="price-row__name">Ламинирование бровей</span><span class="price-row__price">от 2 000 ₽</span></li>
+                  <li class="price-row">
+                    <span class="price-row__name">Оформление бровей с окрашиванием</span><span class="price-row__price">1 300 ₽</span>
+                    <span class="price-row__note">Подготовка кожи, коррекция пинцетом или воском, подбор вашей формы, окрашивание стойкой краской или хной.</span>
+                  </li>
+                  <li class="price-row">
+                    <span class="price-row__name">Оформление бровей без окрашивания</span><span class="price-row__price">1 000 ₽</span>
+                    <span class="price-row__note">Подготовка кожи, коррекция пинцетом или воском, подбор вашей формы.</span>
+                  </li>
+                  <li class="price-row">
+                    <span class="price-row__name">Ламинирование бровей</span><span class="price-row__price">1 800 ₽</span>
+                    <span class="price-row__note">Долговременная укладка: подготовка кожи, составы для укладки, коррекция, подбор формы, окрашивание краской или хной.</span>
+                  </li>
+                  <li class="price-row"><span class="price-row__name">Уход за бровями «Счастье», восстановление, ботокс</span><span class="price-row__price">300 ₽</span></li>
+                  <li class="price-row"><span class="price-row__name">Окрашивание ресниц</span><span class="price-row__price">500 ₽</span></li>
+                  <li class="price-row"><span class="price-row__name">Коррекция воском дополнительной зоны</span><span class="price-row__price">300 ₽</span></li>
                 </ul>
               </section>
             </div>
